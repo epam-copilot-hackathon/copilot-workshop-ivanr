@@ -62,7 +62,9 @@ public class DemoController {
                "<br><br>" +
                "Click <a href=\"/validateSpanishDNI\">here</a> to validate a Spanish DNI." +
                "<br><br>" +
-               "Click <a href=\"/color\">here</a> to find the color hex by color name ins path param.";
+               "Click <a href=\"/color\">here</a> to find the color hex by color name ins path param." +
+               "<br><br>" +
+               "Click <a href=\"/joke\">here</a> to load new joke.";
     }
 
     @GetMapping("/datetime")
