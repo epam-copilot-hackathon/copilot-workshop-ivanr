@@ -1,12 +1,9 @@
 package com.microsoft.hackathon.copilotdemo.controller;
 
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.http.HttpStatus;
 import org.springframework.lang.Nullable;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.server.ResponseStatusException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -64,7 +61,9 @@ public class DemoController {
                "<br><br>" +
                "Click <a href=\"/color\">here</a> to find the color hex by color name ins path param." +
                "<br><br>" +
-               "Click <a href=\"/joke\">here</a> to load new joke.";
+               "Click <a href=\"/joke\">here</a> to load new joke." +
+               "<br><br>" +
+               "Click <a href=\"/parse-url\">here</a> to goto the file system structure parsed by path.";
     }
 
     @GetMapping("/datetime")
